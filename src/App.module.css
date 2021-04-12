@@ -1,0 +1,15 @@
+.centeredDiv {
+  width: var(--abs-space-14);
+  height: var(--abs-space-12);
+  margin: auto;
+  background: var(--color-secondary-0);
+  border: 1px solid var(--color-primary-2);
+  border-radius: var(--abs-space-2);
+  box-shadow: var(--abs-space-2) var(--abs-space-2) var(--abs-space-1) var(--color-black);
+}
+
+.title {
+  font-size: var(--rel-font-bigger);
+  color: var(--color-white);
+  text-align: center;
+}
