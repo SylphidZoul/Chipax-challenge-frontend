@@ -1,0 +1,10 @@
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rel-space-7);
+}
+
+.listContainer > * {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
