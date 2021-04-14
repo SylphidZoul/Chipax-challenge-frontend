@@ -1,0 +1,8 @@
+.CardsList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: var(--rel-space-6);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

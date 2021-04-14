@@ -1,0 +1,13 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.InputsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: var(--rel-space-2);
+  justify-content: space-evenly;
+  margin-bottom: var(--rel-space-6);
+}
