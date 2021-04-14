@@ -1,0 +1,32 @@
+@keyframes fadeInFromBelow {
+  from {
+    opacity: 0.2;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.TimeCard {
+  max-width: 100%;
+  padding: var(--rel-space-6);
+  border-left: 8px solid var(--color-primary-2);
+  background: var(--color-secondary-0);
+  border-radius: var(--abs-space-2);
+  box-shadow: var(--abs-space-2) var(--abs-space-2) var(--abs-space-1) var(--color-black);
+  animation: fadeInFromBelow 250ms ease-in;
+}
+
+.Text {
+  font-size: var(--rel-font-normal);
+  color: var(--color-white);
+  text-align: center;
+  line-height: var(--rel-space-5);
+}
+
+.Time {
+  color: var(--color-primary-2);
+  font-weight: 600;
+}
