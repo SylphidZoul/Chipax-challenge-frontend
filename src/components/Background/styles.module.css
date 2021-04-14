@@ -1,0 +1,25 @@
+.ImageWrapper {
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+}
+
+.Image {
+  width: 100%;
+}
+
+.Rick {
+  width: 25%;
+  left: 3%;
+}
+
+.Icon {
+  width: 15%;
+  left: calc(50% - 7.5%);
+  bottom: 4%; 
+}
+
+.Morty {
+  width: 15%;
+  right: 3%;
+}

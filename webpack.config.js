@@ -49,7 +49,7 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, './src/template.html'),
-      favicon: path.resolve(__dirname, './src/assets/icon.svg'),
+      favicon: path.resolve(__dirname, './src/assets/rick.ico'),
       meta: {
         description: "Chipax's Rick and Morty Challenge client.",
         'theme-color': '#38A14A',

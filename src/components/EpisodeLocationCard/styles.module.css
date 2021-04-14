@@ -1,0 +1,34 @@
+@keyframes fadeInFromBelow {
+  from {
+    opacity: 0.2;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.EpisodeCard {
+  padding: var(--rel-space-5);
+  border-left: 8px solid var(--color-primary-2);
+  background: var(--color-secondary-0);
+  border-radius: var(--abs-space-2);
+  box-shadow: var(--abs-space-2) var(--abs-space-2) var(--abs-space-1) var(--color-black);
+  animation: fadeInFromBelow 250ms ease-in;
+  display: flex;
+  align-items: center;
+}
+
+.Text {
+  color: var(--color-white);
+  font-size: var(--rel-font-normal);
+  text-align: center;
+  line-height: var(--rel-space-5);
+}
+
+.KeyWord {
+  color: var(--color-primary-2);
+  font-weight: 600;
+  font-size: var(--rel-font-normal);
+}

@@ -1,0 +1,25 @@
+.ButtonWrapper {
+  position: fixed;
+  top: 3%;
+  right: 5%;
+  z-index: 5;
+}
+
+.ToggleButton {
+  font-size: var(--rel-font-normal);
+  background: var(--color-secondary-0);
+  color: var(--color-primary-2);
+  font-weight: 600;
+  padding: var(--rel-space-4);
+  border: none;
+  border: 2px solid var(--color-primary-2);
+  border-radius: var(--abs-space-1);
+  box-shadow: 2px 2px 2px #00000080;
+  transition: all 250ms ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.ToggleButton:hover {
+  background: var(--color-secondary-3);
+}
