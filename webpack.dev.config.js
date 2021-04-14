@@ -4,11 +4,6 @@ const webpack = require('webpack')
 
 module.exports = {
   mode: 'development',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
-    filename: '[name].js'
-  },
   devServer: {
     hot: true,
     host: 'localhost',
@@ -58,9 +53,11 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, './src/template.html'),
+      favicon: path.resolve(__dirname, './src/assets/icon.svg'),
       meta: {
-        description: "Frontend of Chipax's RickAndMorty Challenge.",
-        'theme-color': '#030303'
+        description: "Chipax's Rick and Morty Challenge client.",
+        'theme-color': '#38A14A',
+        'og:image': path.resolve(__dirname, './src/assets/icon.svg')
       }
     })
   ]

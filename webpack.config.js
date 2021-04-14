@@ -4,7 +4,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: 'production',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
     publicPath: '/',
     filename: '[name].js'
   },
@@ -48,10 +48,12 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, './public/index.html'),
+      template: path.resolve(__dirname, './src/template.html'),
+      favicon: path.resolve(__dirname, './src/assets/icon.svg'),
       meta: {
-        description: "Frontend of Chipax's RickAndMorty Challenge.",
-        'theme-color': '#030303'
+        description: "Chipax's Rick and Morty Challenge client.",
+        'theme-color': '#38A14A',
+        'og:image': path.resolve(__dirname, './src/assets/icon.svg')
       }
     })
   ]

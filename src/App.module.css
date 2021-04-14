@@ -1,15 +1,25 @@
-.centeredDiv {
-  width: var(--abs-space-14);
-  height: var(--abs-space-12);
-  margin: auto;
-  background: var(--color-secondary-0);
-  border: 1px solid var(--color-primary-2);
-  border-radius: var(--abs-space-2);
-  box-shadow: var(--abs-space-2) var(--abs-space-2) var(--abs-space-1) var(--color-black);
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-.title {
-  font-size: var(--rel-font-bigger);
-  color: var(--color-white);
-  text-align: center;
+.layout {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  padding: var(--rel-space-10) var(--rel-space-4) var(--rel-space-8);
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: minmax(min-content, 1024px);
+  grid-auto-rows: min-content;
+  grid-row-gap: var(--rel-space-8);
+  animation: fadeIn 350ms ease-in;
 }
