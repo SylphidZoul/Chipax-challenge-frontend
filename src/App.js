@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
-import styles from './App.module.css'
+import { CharCounterScreen } from './screens/CharCounterScreen'
+import { EpisodeLocationsScreen } from './screens/EpisodeLocationsScreen'
+import { Background } from './components/Background'
+import { ScreenToggleButton } from './components/ScreenToggleButton'
+import { Footer } from './components/Footer'
 
 const App = () => {
+  const [isCharCounterActive, setIsCharCounterActive] = useState(true)
+
   return (
-    <div className={styles.centeredDiv}>
-      <h1 className={styles.title}>
-        Starting...
-      </h1>
-    </div>
+    <>
+      <Background />
+      <ScreenToggleButton
+        inactiveScreenName={isCharCounterActive ? 'Episode Locations' : 'Chars Counter'}
+        onClick={() => setIsCharCounterActive(prev => !prev)}
+      />
+      {
+        isCharCounterActive
+          ? <CharCounterScreen />
+          : <EpisodeLocationsScreen />
+      }
+      <Footer />
+    </>
   )
 }
 
